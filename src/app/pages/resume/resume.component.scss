@@ -1,0 +1,39 @@
+// resume style
+
+.education-child, .experience-child{
+    width: 480px;
+    background: #1114186e;
+    padding: 30px 33px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+}
+.education-child span, .experience-child span{
+    background: #20c997;
+    padding: 5px 11px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    width: 90px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.education-child h3, .experience-child h3 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.education-child h4, .experience-child h4 {
+    color: #20c997;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.education-child p, .experience-child p{
+    color: #ddd;
+    font-size: 16px;
+    line-height: 26px;
+}

@@ -1,0 +1,92 @@
+.skill-inner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+
+.skill-first-child, .skill-seconde-child li {
+    width: 500px;
+}
+
+.skill-first-child li, .skill-seconde-child li {
+    font-size: 17px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 60px;
+    position: relative;
+}
+.skill-first-child ul li span, .skill-seconde-child ul li span {
+    float: right;
+}
+.skill-first-child li::before, .skill-seconde-child li::before{
+    content: "";
+    background: rgb(26, 85, 85);
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 28px;
+    border-radius: 5px;
+}
+
+.skill-first-child li::after, .skill-seconde-child li::after{
+    content: "";
+    background: #51ffaed4;
+    width: 0;
+    height: 10px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.skill-first-child li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 80%;
+    }
+}
+.skill-first-child li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 70%;
+    }
+}
+.skill-first-child li.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 50%;
+    }
+}
+.skill-seconde-child li.anjs::after{
+    animation-name: anjs;
+}
+@keyframes anjs{
+    to{
+        width: 65%;
+    }
+}
+.skill-seconde-child li.gpd::after{
+    animation-name: gpd;
+}
+@keyframes gpd{
+    to{
+        width: 75%;
+    }
+}
+.skill-seconde-child li.fbm::after{
+    animation-name: fbm;
+}
+@keyframes fbm{
+    to{
+        width: 85%;
+    }
+}

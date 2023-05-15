@@ -1,0 +1,73 @@
+.container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.topHeader{
+    background-color: rgb(26, 85, 85);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.topMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+    ul {
+        display: flex;
+        gap: 40px;
+    }
+
+}
+
+.top-logo {
+    font-size: 15px;
+    span {
+        color: rgb(29, 216, 129);
+        margin-left: 3px;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+    h2{
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+}
+
+.top-menu {
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+
+}
+.top-menu ul li a:hover{
+    color: rgb(29, 216, 129);
+}
+.top-menu ul li a{
+    transition: 0.4s ease;
+    &.active{
+        color: rgb(29, 216, 129);
+    }
+}
+.sub-menu ul {
+    display: block !important;
+}
+
+.sub-menu {
+    width: 100px;
+    position: absolute;
+    top: 39px;
+    padding: 10px 14px;
+    padding-bottom: 30px;
+    background: rgb(26, 85, 85);
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 0.5s ease;
+}
+.sub-menu ul li {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.top-menu ul li:hover .sub-menu{
+    transform: scaleY(1);
+}

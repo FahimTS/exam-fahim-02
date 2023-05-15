@@ -1,0 +1,96 @@
+<!-- header -->
+<header class="header" id="header">
+    <div class="container">
+    </div>
+    <div class="homeSlide">
+        <div class="slider-img">
+            <img src="../../../assets/img/slide-11.jpg" alt="">
+            <div class="home-content">
+                <h1><span>HEY!</span> WELCOME TO MY WEBSITE.</h1>
+                <p>This is my own and personal website. You will be find information about me from this website.</p>
+                <div class="btn-cta">
+                    <button type="button">Work Wite Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!-- header section -->
+<section class="headerInfo" id="headerInfo">
+    <div class="container">
+        <div class="header-me">
+            <div class="header-info">
+                <h1>Hello, I'm <span>Fahim Hossen.</span></h1>
+                <h2>Web Developer</h2>
+                <div class="btn-cta">
+                    <button type="button">Download CV</button>
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="../../../assets/img/hero-image.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section -->
+<section class="about-me" id="about-me">
+    <div class="container">
+        <div class="sec-title">
+            <h2>About Me</h2>
+        </div>
+        <app-about-me></app-about-me>
+    </div>
+</section>
+<!-- services section -->
+<section class="service" id="service">
+    <div class="container">
+        <div class="sec-title">
+            <h2>What I Do</h2>
+        </div>
+        <div class="service-inner">
+        <app-service *ngFor="let data of services" [serviceCard]="data"></app-service>
+    </div>
+    </div>
+</section>
+<!-- skill section -->
+<section class="skill" id="skill">
+    <div class="container">
+        <div class="sec-title">
+            <h2>My Skill</h2>
+        </div>
+        <app-skill></app-skill>
+    </div>
+</section>
+<!-- summary section -->
+<section class="resume" id="resume">
+    <div class="container">
+        <div class="sec-title">
+            <h2>Resume</h2>
+        </div>
+        <div class="education-inner">
+            <div class="education">
+                <h2>My Education</h2>
+                <div class="education-child">
+                    <app-resume *ngFor="let datas of resumes" [resumeCard]="datas"></app-resume>
+                </div>
+            </div>
+            <div class="experience">
+                <h2>My Experience</h2>
+                <div class="education-child">
+                    <app-resume *ngFor="let datas of resumeSeconde" [resumeCard]="datas"></app-resume>
+                </div>
+            </div>
+        </div> 
+
+        </div>
+</section>
+<!-- contact section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="sec-title">
+            <h2>Contact Me</h2>
+        </div>
+        <app-contact></app-contact>
+    </div>
+</section>
